@@ -2,25 +2,28 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .coupon__wrapper {
-	display: flex;
-	justify-content: center;
 	height: 60vh;
 	align-items: center;
 	font-family: 'Montserrat', san-serif;
 	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
 }
 
 .coupon__container {
+	display: flex;
+	flex-direction: column;
 	border: solid 5px #000;
 	padding: 25px;
 	width: 625px;
-	display: flex;
-	justify-content: space-between;
 }
 
-.coupon__content {
-	
+.container__one {
+	display: flex;
+	justify-content: center;
 }
+
+.coupon__content {}
 
 .coupon__image {
 	max-width: 200px;
@@ -49,17 +52,27 @@
 .coupon__price {
 	float:right;
 }
+
+.container__two {
+	display: flex;
+}
+
 </style>
 <div class="coupon__wrapper">
-	<div class="coupon__container">
-		<img class="coupon__image" src="https://cdn.shopify.com/s/files/1/0205/2710/products/032_SocolaChocolates081416.jpg?v=1472793159" />
-		<div class="coupon__content">
-			<h1>On Your Way Special</h1>
-			<p>Assorted Chocolate Truffle Box
- <span class="coupon__price">$9.99</span></p>		
-			<a href="/">
-			<button class="coupon__btn">Get Special Offer</button>
-			</a>
+	<div class="coupon__container">	
+		<div class="container__one">
+				<img src="images/Socola-Chocolatier.png" />
+		</div>
+		<div class="container__two">
+			<img class="coupon__image" src="https://cdn.shopify.com/s/files/1/0205/2710/products/032_SocolaChocolates081416.jpg?v=1472793159" />
+			<div class="coupon__content">
+				<h1>On Your Way Special</h1>
+				<p>Assorted Chocolate Truffle Box
+			<span class="coupon__price">$9.99</span></p>		
+				<a href="/">
+				<button class="coupon__btn">Get Special Offer</button>
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
