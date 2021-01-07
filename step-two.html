@@ -60,6 +60,7 @@ body {
 .checkout__table {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .checkout__item {
@@ -133,6 +134,11 @@ body {
 	  height: 60px;
 	margin: 0 12px;
 }
+
+.quantity__image {
+	width: 200px;
+    margin: 20px 0;
+}
 </style>
 
 <div class="">
@@ -151,8 +157,11 @@ body {
 </div>
 
 <div id="quantity" class="checkout__wrapper noDisplay">
-	<h3>Quantity</h3>
+	<h3>Assorted Chocolate Truffle Box</h3>
+	<p>$9.99</p>
 	<div class="checkout__table">
+		<img class="quantity__image" src="https://cdn.shopify.com/s/files/1/0205/2710/products/032_SocolaChocolates081416.jpg?v=1472793159" />
+
 		<div class="quantity__item">
 			<input value="1" type="number" name="quantity" min="1" max="1">
 		</div>
@@ -167,7 +176,7 @@ body {
 		<div class="checkout__item">
 			<span>1</span>
 			<span>Assorted Chocolate Truffle Box</span>
-			<span>$9.95</span>
+			<span>$9.99/span>
 		</div>
 		<div class="checkout__item">
 			<span>1</span>
