@@ -144,7 +144,7 @@ body {
 <div class="">
 	<img style="padding: 20px;" src="images/shop-logo.png" />
 </div>
-
+<!-- STEP ONE -->
 <div id="shop" class="shop__wrapper">
 	<div class="button-image__container">
 	<img src="https://mybigplunge.com/wp-content/uploads/2016/08/Volvo-Uber-1.jpg" />
@@ -155,7 +155,17 @@ body {
 		<button id="btnOne" class="shop__button">Taxi Self Driving</button>
 	</div>
 </div>
+<!-- STEP TWO -->
+<div id="options" class="shop__wrapper">
+	<div class="button-image__container">
+		<button id="btnTwo" class="shop__button">Pickup Now</button>
+	</div>
+	<div class="button-image__container">
+		<button  class="shop__button">Deliver at Scheduled Time</button>
+	</div>
+</div>
 
+<!-- STEP THREE -->
 <div id="quantity" class="checkout__wrapper noDisplay">
 	<h3>Assorted Chocolate Truffle Box</h3>
 	<p>$9.99</p>
@@ -166,17 +176,17 @@ body {
 			<input value="1" type="number" name="quantity" min="1" max="1">
 		</div>
 	</div>
-	<button id="btnTwo" class="checkout__button">Checkout</button>
+	<button id="btnThree" class="checkout__button">Checkout</button>
 </div>
 
-
+<!-- STEP FOUR -->
 <div id="checkout" class="checkout__wrapper noDisplay">
 	<h3>Checkout</h3>
 	<div class="checkout__table">
 		<div class="checkout__item">
 			<span>1</span>
 			<span>Assorted Chocolate Truffle Box</span>
-			<span>$9.99/span>
+			<span>$9.99</span>
 		</div>
 		<div class="checkout__item">
 			<span>1</span>
@@ -190,19 +200,20 @@ body {
 			<span>$11.49</span>
 		</div>
 	</div>
-	<button id="btnThree" class="checkout__button">Payment Method</button>
+	<button id="btnFour" class="checkout__button">Payment Method</button>
 </div>
 
+<!--- STEP FIVE -->
 <div id="payment" class="payment__wrapper noDisplay">
 	<h3>Payment</h3>
 	<div style="margin: 15px 0;">
 	<input type="radio"/>
 	<span class="payment__creditcard">Credit Card On Account - Ending in 9466</span>
 	</div>
-	<button id="btnFour" class="checkout__button">Complete Order</button>
+	<button id="btnFive" class="checkout__button">Complete Order</button>
 </div>
 
-
+<!-- STEP SIX -->
 <div id="complete" class="complete__wrapper noDisplay">
 	<h3>Order Complete</h3>
 	<p>Your order will be ready when you arrive!</p>
@@ -216,23 +227,29 @@ body {
 
     $('#btnOne').click(function() {
 	$('#shop').hide();
-	$('#quantity').removeClass('noDisplay');
+	$('#options').removeClass('noDisplay');
 })
 
 $('#btnTwo').click(function() {
+	$('#options').hide();
+	$('#quantity').removeClass('noDisplay');
+});
+
+$('#btnThree').click(function() {
 	$('#quantity').hide();
 	$('#checkout').removeClass('noDisplay');
 });
 
-$('#btnThree').click(function() {
+$('#btnFour').click(function() {
 	$('#checkout').hide();
 	$('#payment').removeClass('noDisplay');
 });
 
-$('#btnFour').click(function() {
+$('#btnFive').click(function() {
 	$('#payment').hide();
 	$('#complete').removeClass('noDisplay');
 });
+
 
 
 </script>
