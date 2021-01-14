@@ -19,6 +19,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 280px;
+    text-align: center;
+	margin: 0 20px;
 }
 
 .button-image__container img {
@@ -139,6 +142,11 @@ body {
 	width: 200px;
     margin: 20px 0;
 }
+
+.text-info {
+	min-height: 50px;
+	font-size: 12px;
+}
 </style>
 
 <div class="">
@@ -158,10 +166,19 @@ body {
 <!-- STEP TWO -->
 <div id="options" class="shop__wrapper">
 	<div class="button-image__container">
-		<button id="btnTwo" class="shop__button">Pickup Now</button>
+		<h3>Delivery</h3>
+		<p class="text-info">Order will be delivered to a<br> location of your choice.</p>
+		<button class="shop__button">Select</button>
 	</div>
 	<div class="button-image__container">
-		<button  class="shop__button">Deliver at Scheduled Time</button>
+		<h3>Curbside Pickup</h3>
+		<p class="text-info">Pick up your order outside.</p>
+		<button id="btnTwo" class="shop__button">Select</button>
+	</div>
+	<div class="button-image__container">
+		<h3>Dine In</h3>
+		<p class="text-info">You will be dropped off at<br> this location.</p>
+		<button class="shop__button">Select</button>
 	</div>
 </div>
 
